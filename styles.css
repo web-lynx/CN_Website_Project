@@ -1,0 +1,185 @@
+:root {
+/* colour variable box */
+--clr-primary: #FCDEC0;
+--clr-accent: #8FC1D4;
+--clr-bglight: #C68B59;
+--clr-bgdark: #865439;
+
+--radius: 0.2rem;
+
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+img {max-width:100%;}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background: var(--clr-bgdark);
+}
+
+h1 {
+  font-family: 'Crimson Text', serif;
+}
+
+/* navigation */
+
+.nav-list {
+  background:var(--clr-bglight);
+  box-shadow: 0px 0px 10px var(--clr-bgdark);
+  margin: 0;
+  padding: 1rem 0;
+  border-radius: var(--radius);
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-item {
+  list-style: none;
+  margin-right: 2rem;
+
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+}
+
+.nav-item a:hover{
+  color:var(--clr-accent)
+}
+
+/* images */
+
+.preview {
+  max-width: 300px;
+  max-height: 400px;
+  border: 1px solid black;
+}
+
+.logo {
+  max-height: 150px;
+}
+
+.vanity {
+  max-width: 300px;
+  max-height: 400px;
+  border: 1px solid black;
+}
+
+/* the box box */
+
+header {
+  padding: 2rem 2rem 2rem;
+  background-color: var(--clr-accent);
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 20%;
+}
+
+.content {
+  background-color: var(--clr-primary);
+  float: 2rem 2rem;
+  padding: 2rem 2rem;
+}
+
+footer {
+  background:var(--clr-bglight);
+  box-shadow: 0px 0px 10px var(--clr-bgdark);
+  margin: 0;
+  padding: 1rem 0;
+  border-radius: var(--radius);
+  float: 2rem 2rem;
+  padding: 1rem 2rem;
+
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.container {
+  background-color: var(--clr-accent);
+  float: 2rem 2rem;
+  padding: 2rem 2rem;
+
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.container-row {
+  background-color: var(--clr-accent);
+  float: 2rem 2rem;
+  padding: 2rem 2rem;
+
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.container-alt {
+  background-color: var(--clr-primary);
+  float: 2rem 2rem;
+  padding: 2rem 2rem;
+
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.item {
+  min-width: 400px;
+  max-width: 33%;
+  padding: 1rem 1rem;
+}
+
+.item-wide {
+  min-width: 400px;
+  max-width: 50%;
+  padding: 1rem 1rem;
+}
+
+/* Text n' that */
+
+/* quote funtime courtesy of Kevin Powell */
+
+.quote {
+  text-decoration: none;
+  background-image: linear-gradient(90deg,#D70270, #734F96,#0038A8);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 0% 3px;
+  transition: background-size 300ms ease-in-out;
+
+  color: inherit;
+  font-variant: bolder;
+}
+
+.quote:hover {
+    background-size: 100% 3px;
+    color: inherit;
+}
+
+.subtitle {
+  font-style: italic;
+  display: inline-block;
+}
+
+strong {
+  font-style: italic;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
